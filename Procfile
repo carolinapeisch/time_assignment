@@ -1,1 +1,1 @@
-web: gunicorn cgp48-time.wsgi --log-file -
+web: python route.py $PORT

@@ -1,1 +1,1 @@
-web: gunicorn route:app
+web: python time/route.py $PORT

@@ -1,1 +1,1 @@
-web: gunicorn route.wsgi
+web: gunicorn route:app

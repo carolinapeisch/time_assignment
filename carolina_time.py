@@ -1,7 +1,7 @@
 #References: 
 #https://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822
 
-from flask import Flask, render_template
+from flask import Flask
 import time
 import sys
  
@@ -12,5 +12,5 @@ def get_time():
   return str(time.time()*1000)
  
 if __name__ == '__main__':
-  app.run(port=sys.argv[1])
+  app.run(host="0.0.0.0", port=sys.argv[1])
 

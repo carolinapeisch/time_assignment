@@ -9,7 +9,7 @@ app = Flask(__name__)
  
 @app.route('/')
 def get_time():
-  return str(time.time()*1000)
+  return str(int(time.time()*1000))
  
 if __name__ == '__main__':
   app.run(host="0.0.0.0", port=sys.argv[1])
